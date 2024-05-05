@@ -55,3 +55,30 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+
+// g++ -o Task14 task14.cpp compare.cpp
+// ./Task13 approximatelyEqual 10.5 10.6 0.1
+// ./Task13 approximatelyEqualAbsRel 100 99.5 0.5 0.01
+
+// # Сравниваем два числа, которые равны с точки зрения эпсилона
+// ./MyProgram approximatelyEqual 0.0000001 0.0000002 0.0001
+
+// # Сравниваем два числа, которые не равны, когда эпсилон слишком мал
+// ./MyProgram approximatelyEqual 0.0001 0.0002 0.00001
+
+// # Сравниваем два числа, которые равны с точки зрения как абсолютного, так и относительного эпсилонов
+// ./MyProgram approximatelyEqualAbsRel 1000 999 1 0.01
+
+// # Сравниваем два числа, которые не равны, когда относительный эпсилон слишком мал
+// ./MyProgram approximatelyEqualAbsRel 1000 999 0.5 0.0001
+
+// # Сравниваем очень маленькие числа, где абсолютный эпсилон важнее
+// ./MyProgram approximatelyEqualAbsRel 1e-50 1.1e-50 1e-49 1e-3
+
+// # Числа 1.2e-50 и 1.1e-50 считаются равными при достаточно больших эпсилонах
+// > C:\>MyProgram approximatelyEqualAbsRel 1.2e-50 1.1e-50 1e-6 1e-3
+// > Числа 1.2e-50 и 1.1e-50 равны.
+
+// # Числа 1.2e-50 и 1.1e-50 считаются неравными при слишком малых эпсилонах
+// > C:\>MyProgram approximatelyEqualAbsRel 1.2e-50 1.1e-50 1e-66 1e-63
+// > Числа 1.2e-50 и 1.1e-50 неравны.
