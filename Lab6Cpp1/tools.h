@@ -1,7 +1,7 @@
-#pragma once
+// #pragma once
 
-// Функция approximatelyEqual сравнивает два числа с заданной точностью epsilon
-bool approximatelyEqual(double a, double b, double epsilon);
+// // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ approximatelyEqual пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ epsilon
+// bool approximatelyEqual(double a, double b, double epsilon);
 
-// Функция approximatelyEqualAbsRel сравнивает два числа с заданными absEpsilon и relEpsilon
-bool approximatelyEqualAbsRel(double a, double b, double absEpsilon, double relEpsilon);
+// // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ approximatelyEqualAbsRel пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ absEpsilon пїЅ relEpsilon
+// bool approximatelyEqualAbsRel(double a, double b, double absEpsilon, double relEpsilon);

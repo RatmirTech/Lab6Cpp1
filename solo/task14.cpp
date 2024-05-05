@@ -22,16 +22,16 @@ int main(int argc, char* argv[]) {
     }
 
     const char* func = argv[1];
-    float num1 = atof(argv[2]);
-    float num2 = atof(argv[3]);
+    double num1 = atof(argv[2]);
+    double num2 = atof(argv[3]);
 
     if (strcmp(func, "approximatelyEqual") == 0) {
         if (argc != 5) {
             cerr << "Использование: approximatelyEqual <число1> <число2> <эпсилон>" << endl;
             return 1;
         }
-        float epsilon = atof(argv[4]);
-        if (approximatelyEqual(num1, num2, epsilon)) {
+        double epsilon = atof(argv[4]);
+        if (double_approximatelyEqual(num1, num2, epsilon)) {
             cout << "Числа приблизительно равны." << endl;
         } else {
             cout << "Числа не приблизительно равны." << endl;
@@ -41,9 +41,9 @@ int main(int argc, char* argv[]) {
             cerr << "Использование: approximatelyEqualAbsRel <число1> <число2> <absEpsilon> <relEpsilon>" << endl;
             return 1;
         }
-        float absEpsilon = atof(argv[4]);
-        float relEpsilon = atof(argv[5]);
-        if (approximatelyEqualAbsRel(num1, num2, absEpsilon, relEpsilon)) {
+        double absEpsilon = atof(argv[4]);
+        double relEpsilon = atof(argv[5]);
+        if (double_approximatelyEqualAbsRel(num1, num2, absEpsilon, relEpsilon)) {
             cout << "Числа приблизительно равны." << endl;
         } else {
             cout << "Числа не приблизительно равны." << endl;

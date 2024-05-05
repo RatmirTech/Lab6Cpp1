@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
             return 1;
         }
         float epsilon = atof(argv[4]);
-        if (approximatelyEqual(num1, num2, epsilon)) {
+        if (float_approximatelyEqual(num1, num2, epsilon)) {
             cout << "Числа равны." << endl;
         } else {
             cout << "Числа не равны." << endl;
@@ -38,7 +38,7 @@ int main(int argc, char* argv[]) {
         }
         float absEpsilon = atof(argv[4]);
         float relEpsilon = atof(argv[5]);
-        if (approximatelyEqualAbsRel(num1, num2, absEpsilon, relEpsilon)) {
+        if (float_approximatelyEqualAbsRel(num1, num2, absEpsilon, relEpsilon)) {
             cout << "Числа равны." << endl;
         } else {
             cout << "Числа не равны." << endl;
